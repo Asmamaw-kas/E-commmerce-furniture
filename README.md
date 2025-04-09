@@ -22,13 +22,10 @@ Responsive Design: Fully responsive, ensuring a great user experience across dev
 
 ---
 
-## **⚡ Quick Start**
-### Prerequisites
-- Node.js v18+
-- PostgreSQL 14+
+
 
 ### Installation
 ```bash
-git clone https://github.com/yourusername/project-name.git
-cd project-name
+git clone https://github.com/Asmamaw-kas/E-commmerce-furniture.git
+cd node-postgres-app
 npm install
