@@ -1,0 +1,397 @@
+body{
+    background-color: aliceblue;
+    font-family: roboto;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+   }
+   header{
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000;
+    box-shadow: 0 2px 13px rgba(0, 0, 0, 0.1); 
+    background-color:rgb(237, 238, 239);
+    margin-top: 0;
+    height: 80px;
+    color: black;
+    
+    
+   }
+   .furniture-name{
+    display: flex;
+    flex-direction: row;
+ 
+   }
+
+    #main-header{
+        flex: 1;
+        margin-top: 0px;
+        font-size: 30px;
+        margin-left: 25px;
+        font-style: oblique; 
+        text-align: left;
+        
+    
+         
+    }
+   
+    #additional-information{
+        flex: 1.7;
+        padding-top: 20px;   
+        text-align: center;
+        column-gap: 30px;
+    }
+    #additional-information a button{
+        border: none;
+        color: #007BFF;
+        background: transparent;
+        cursor: pointer;
+    
+    }
+    #additional-information a button:hover{
+        color: rgb(24, 24, 99);
+    }
+    #total-price-container{
+        padding-top: 38px;    
+        text-align: end;   
+    }
+    #total-amount{
+        text-align: center;
+        padding-left: 10px;
+
+        background: transparent;
+        border: none;
+
+        cursor: pointer;
+
+        
+    }
+.cart-img{
+    width: 50px;
+    cursor: pointer;
+         }
+
+ .cart-incrimentor{
+    position: absolute;
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    right: 20px;
+    top: 30px;
+    color: red;
+    font-size: 20px;
+ }   
+
+
+ 
+#email{
+    padding: 10px; 
+    border-radius: 10px;
+     margin-left: 10px; 
+     width: 23%;
+      border: none;
+       box-shadow: 0 0 5px;
+}
+#errorMessage {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none; /* Initially hidden */
+}
+    .hero {
+        margin-left: 20px;
+        padding-top: 15%;
+        border: 3px;
+        background-image: url("../furniture-im/Untitled.png");
+       background-position: top;
+        background-repeat: no-repeat;
+        height: 70vh;
+        justify-content: center;
+    }
+    
+    .hero h1 {
+        font-size: 2.4em;
+        margin-bottom: 20px;
+    }
+    
+    .hero p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+    }
+    
+    .btn {
+        background: transparent;
+        color: rgb(22, 20, 20);
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    
+    .btn:hover {
+        background-color: #555;
+    }
+
+
+
+
+    /* Glow animation for the specific marquee */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 55px #ff00de, 0 0 75px #ff00de;
+    }
+    50% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 70px #ff00de, 0 0 90px #ff00de;
+    }
+    100% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 55px #ff00de, 0 0 75px #ff00de;
+    }
+}
+
+/* Specific styling for the glowing marquee */
+.glowing-marquee {
+    width: 100%; /* Full width */
+     /* Dark background for better glow effect */
+    padding: 10px 0; /* Add some padding */
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+/* Heading inside the specific marquee */
+.glowing-marquee h2 {
+    font-size: 36px; /* Large font size */
+    color: #0b0303; /* White text color */
+    animation: glow 1.5s infinite; /* Apply glow animation */
+}
+
+
+
+
+    .button-container {
+        display: flex;
+        align-items: center;
+        margin: 20px;
+        column-gap: 40px;
+        padding: 30px 0 40px 5px ; 
+    
+    }
+
+    .image-button, .image-button2, .image-button3, .image-button4{
+        box-shadow: 0 0 16px;
+        position: relative;
+        border: none;
+        background: none;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .image-button img, .image-button2 img, .image-button3 img,.image-button4 img {
+        width: 200px;
+        height: auto;
+        transition: transform 0.3s ease;
+    }
+
+
+    .image-button:hover img, .image-button2:hover img, .image-button3:hover img, .image-button4:hover img {
+        transform: scale(1.2);
+    }
+
+
+
+    .image-button .overlay-text, .image-button2 .overlay-text, .image-button3 .overlay-text, .image-button4 .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .image-button:hover img, .image-button2:hover img, .image-button3:hover img,.image-button4:hover img {
+        opacity: 0.75;
+    }
+
+
+    .image-button:hover .overlay-text, .image-button2:hover .overlay-text, .image-button3:hover .overlay-text,.image-button4:hover .overlay-text {
+        opacity: 0.75;
+    }
+
+
+    .description {
+        margin-left: 20px;
+        font-size: 23px;
+        color: #100202;
+    }
+
+
+
+
+    .container{
+        text-align: left;
+        padding: 10px 5px 10px 0;
+    }
+
+    .sub-container{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .cart-toggle{
+        visibility: hidden;
+    }
+    .sub-container section{
+        flex: 2;
+        padding: 10px;
+    }
+    .sub-container main{
+        flex: 1;
+    }
+    
+    .container-class{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        row-gap: 30px;  
+        padding-left: 20px;
+        column-gap: 30px;
+    }
+    .furniture-content{
+        background-color: aliceblue;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 13px;
+
+    }
+    .furniture-images{
+       width: 100%;
+        margin-top: 30px;
+        border-radius: 7px;
+    }
+    #roll-no{
+        text-align: left;
+        margin-left: 0px;
+        margin-right: 5px;
+        padding: 7px;
+        border-radius: 50%;
+        border: none;
+        background-color: brown;
+        color: white;
+    }
+    .add{
+        
+        border-radius: 11px;
+        color: white;
+        cursor: pointer;
+        border: none;
+        padding: 10px;
+        background-color:  #007BFF;
+        
+    }
+    .add:hover{
+        background-color:  rgb(24, 24, 163);
+    }
+    .add:active{
+        background-color:   rgb(12, 12, 134);
+    }
+    #amount{
+        text-align: center;
+        width: 19px;
+        border-radius: 3px;
+        border: none;
+        margin-left: 25%;
+        font-size: 16px;
+    }
+    
+    @media(max-width:1300px){
+        .sos{
+            visibility: hidden;
+        }
+
+    }
+    
+    @media(max-width:1000px) {
+        .container-class{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        row-gap: 17px;  
+        column-gap: 15px;
+        }
+        .cartwhole{
+            display: none;
+        }
+        #additional-information{
+            display: none;
+        }
+        
+    }
+
+    @media (max-width: 600px)
+        
+     {
+        .container-class{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        row-gap: 13px;  
+        column-gap:10px;
+        }
+        .description p{
+            display: none;
+        }
+        .sos{
+            visibility: visible;
+        }
+   
+    }
+
+   
+    .additional-info{
+       display: flex;
+       align-items: end;
+       justify-content: center;
+       margin-bottom: 60px;
+    }
+    .mycite{
+        display: flex;
+        align-items: center;
+        margin-left: 50%;
+        background-color: tomato;
+        border-radius: 5px;
+        padding-left: 5px;
+        box-shadow: 0 0 10px;
+                
+    }
+    cite{
+        font-size: 13px;
+        font-style: normal;
+        display: block;
+        line-height: 16px;
+        color: #7c5e5e;
+        position: absolute;
+        padding-left: 60px;
+       
+
+    }
+
+    cite a{color: inherit;        }
+    cite a:hover{color: #000}
+    cite::after{
+    content: '';
+    display:block;
+    width: 50px;
+    height: 50px;
+    background: url(../furniture-im/photo_2025-01-06_18-15-34.jpg) no-repeat 0px 0px;
+    background-size: contain;
+    position: absolute; top: 0px; left: 0px;
+    border-radius: 10px;
+
+    }
+
+    footer{
+        padding: 50px 3px 30px 5px;
+        margin-top: 20px;
+        align-items: center;
+    
+    }

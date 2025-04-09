@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Abebaw Furniture - High-quality furniture for homes and offices. Shop now for beds, sofas, cupboards, and more.">
+    <meta name="keywords" content="furniture, beds, sofas, cupboards, office furniture">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     <link rel="canonical" href="https://www.SABAfurniture.com">
+     <link rel="icon" type="image/x-icon" href="furniture-im/logo4.png">
+    <title>SABAfurniture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" > 
+    <link rel="stylesheet" href="css/SABAfirniture.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="css/footer.css">
+  
+</head>
+<body>
+   <header>
+        <div class="furniture-name"><img src="furniture-im/logo4.png" alt="" style="width: 55px; margin-left: 10px; z-index: 100;"><h1 id="main-header">SABA FURNITURE </h1>
+            <nav id="additional-information">
+                <a href=""><button>Home</button></a>
+                <a href="#each1"><button>bed</button></a>
+                <a href="#each2"><button>buffet</button></a>
+                <a href="#each3"><button>sofa</button></a>
+                <a href="#each4"><button>cupboard</button></a>
+                <a href="aboutUS.html"><button>About us</button></a>
+                <a href="agreement.html"><button> Agreements</button></a>
+            </nav> 
+            <div id="total-price-container">
+           
+                <label for="total-amount">total orders:</label>
+                <button id="total-amount"><img class= "cart-img" src="furniture-im/cart.png" alt="cart.png"><button class="cart-incrimentor">0</button></button><br>
+               
+            </div>
+        </div>
+    </header>
+        
+<main>
+   <div class="container">
+   
+    <section class="hero">
+        <h1>Make Your Home <br><strong style="color: blue;"> Modern Design.</strong></h1>
+        <p>Welcome to SABA furniture, where you can order handcrafted furniture to elevate your home decor. </p>
+        <input type="email" placeholder="abc@mail.com" id="email" required>
+        <a href="#each1" class="btn" id="shopNowBtn">Shop Now</a>
+        <p id="errorMessage" style="color: red; display: none;">Please fill the email</p>
+    </section>
+    
+    <marquee behavior="alternate" direction="right" loops="20" class="glowing-marquee">
+        <h2>OUR PRODUCTS</h2>
+    </marquee>
+ 
+    <div class="sub-container">
+
+        <section>
+            <h3 id="each1"></h3>
+            <div class="button-container">
+                <button class="image-button">
+                    <img src="furniture-im/bed1.png" alt="Bed Image">
+                    <div class="overlay-text"><h3>click me</h3></div>
+                </button>
+                <div class="description"><h2>comfortable bed for a good night's sleep.</h2>
+                    <p>Explore our collection of unique handcrafted furniture pieces </p>
+                    </div>
+            </div>
+            <div class="container-class js-container">              
+            </div>
+           
+            
+            <h3 id="each2"></h3>
+            <div class="button-container">
+                <button class="image-button2">
+                    <img src="furniture-im/bufe3.png" alt="bufe Image">
+                    <div class="overlay-text">click met</div>
+                </button>
+                <div class="description">
+                    <h2>stylish buffet for elegant dining storage.</h2>
+                   <p> Enhance your dining space with our beautifully crafted buffet, designed to offer both functionality and sophistication.</p>
+                </div>
+            </div>
+            <div class="container-class js-container2">    
+            </div>
+        
+            <h3 id="each3"></h3>
+            <div class="button-container">
+                <button class="image-button3">
+                    <img src="furniture-im/sofa1.png" alt="sofa Image">
+                    <div class="overlay-text">click me</div>
+                </button>
+                <div class="description">
+                    <h2>plush, leather sofa for modern living.</h2>
+                   <p> Elevate your home with our premium leather sofa, combining durability, comfort, and contemporary design.</p>
+                </div>
+            </div>
+             <div class="container-class js-container3">
+            </div>
+            
+             <h3 id="each4"></h3>
+             <div class="button-container">
+                <button class="image-button4">
+                    <img src="furniture-im/cupboard1.png" alt="cupboard Image">
+                    <div class="overlay-text">click me</div>
+                </button>
+                <div class="description">
+                    <h2>modern wooden cupboard for stylish storage.</h2>
+                   <p> Crafted from high-quality wood, this cupboard offers durability and elegance.</p>
+                </div>
+            </div>
+             <div class="container-class js-container4">
+            </div>
+    
+        </section>
+
+        <main class=" cartwhole cart-toggle">
+            <section class="cart-section">
+                <h1>Your Cart</h1>
+                <div class="cart-container">
+                    <!-- Cart items will be dynamically added here -->
+                    <div id="cart-items"></div>
+                    <div class="cart-summary">
+                        <p>Total Items: <span id="total-quantity">0</span></p>
+                        <p>Total Price: <span id="total-price">0</span> ETB</p>
+                    </div>
+                </div>
+    
+                <div class="payment-section">
+                    <h3>Payment Details</h3>
+                    <form id="payment-form">
+                        <div class="form-group">
+                            <label for="screenshot">Upload Payment Screenshot:</label>
+                            <input type="file" id="screenshot" name="screenshot" accept="image/*" required>
+                        </div>
+                        <button type="submit" class="btn-primary">Submit </button>
+                        
+                    </form>
+                    <form id="cart-form">
+                        <button type="button" id="order-to-database-button" style="background: transparent; border: none; color: antiquewhite; padding: 3px; cursor: pointer;">Order</button>
+                    </form>
+                    
+                </div>
+            </section>
+        </main>
+    </div>
+   
+  
+
+    <div class="additional-info">
+        <div class="mycite">
+            <cite>
+               
+            </cite>
+        </div>
+    </div>
+   
+
+    <hr>
+    <footer id="address-phone">
+        <div class="footer-container">
+            <!-- Address Section -->
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <address>
+                    <strong>Address:</strong> Gojjam, Burie Shindi, Womberma, Face to Face Gebrel Church<br>
+                    <strong>Phone:</strong> +251 900 000 000<br>
+                    <strong>Email:</strong> abbebawbirhanu@gmail.com
+                </address>
+            </div>
+    
+            <!-- Social Media Links -->
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank"><img src="furniture-im/facebook.png" alt="Facebook"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="furniture-im/twitter.jpg" alt="Twitter"></a>
+                    <a href="https://instagram.com" target="_blank"><img src="furniture-im/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+    
+            <!-- Newsletter Subscription -->
+            <div class="footer-section sos">
+                <h4>Subscribe to Our Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+    
+            <!-- Map Embed -->
+            
+        </div>
+    
+        <!-- Copyright Section -->
+        <div class="copyright">
+            &copy; 2025 Abebaw Furniture. All Rights Reserved.
+        </div>
+    </footer>
+   </div>
+</main> 
+   
+   <script type="module" src="javascripts/main.js"></script>
+  
+
+
+</body>
+</html>
